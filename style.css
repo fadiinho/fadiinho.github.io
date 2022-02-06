@@ -1,0 +1,132 @@
+:root {
+  --bg-color: #181a1b;
+  --primary-color: #4cb944;
+  --second-color: #081729;
+  --third-color: #e3c2ff;
+  --fourth-color: #bfdcff;
+}
+
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  background-color: var(--bg-color);
+}
+
+@media (max-width: 640px) {
+  #title {
+    font-size: 24px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#title {
+  color: var(--third-color);
+}
+
+#text {
+  background-color: #16181a;
+  border: 1px solid var(--third-color);
+  margin-bottom: 4px;
+  color: #fff;
+  resize: none;
+}
+
+#voices {
+  background-color: var(--bg-color);
+  color: #fff;
+  text-align: center;
+  margin: 2px auto;
+  border: 1px solid var(--third-color);
+  border-radius: 16px;
+}
+
+.btn {
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 16px;
+  width: 100px;
+  padding: 2px 0;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: #53c94b;
+}
+
+.characters {
+  display: flex;
+  justify-content: flex-end;
+  width: 100px; 
+}
+
+.char-wrapper {
+  margin-right: 24px;
+}
+
+#charlen {
+  font-size: large;
+  color: #4cb944;
+}
+
+.tooltip {
+  font-size: medium;
+  display: inline-block;
+  position: relative;
+  border: 1px solid var(--third-color);
+  width: 20px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media (max-width: 366px) {
+  .tooltip {
+    width: 24px;
+  }
+
+  .tooltip .tooltiptext {
+    top: 100%;
+    left: 50%;
+    margin-top: 4px;
+    margin-left: -120px;
+  }
+}
+
+@media (min-width: 366px) {
+  .tooltip .tooltiptext {
+    margin-left: 10px;
+  }
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 240px;
+  background-color: #16181a;
+  padding: 5px;
+  border: 1px solid var(--third-color);
+  border-radius: 12px;
+  position: absolute;
+}
+
+.tooltip:hover {
+  background-color: #25282b;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TTS Test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onLoad="load()">
+    <div class="container">
+      <h1 id="title">Teste Mensagem de Voz</h1>
+      <textarea id="text" rows="10" cols="30" maxlength="134"></textarea>
+      <audio id="audio" controls="">
+        <source id="source" type="audio/wav" />
+      </audio>
+      <select id="voices"></select>
+      <div>
+        <button class="btn" type="submit" id="button">Enviar</button>
+      </div>
+      <div class="characters">
+        <div class="char-wrapper"><span id="charlen">0</span></div>
+        <div class="tooltip">
+          ?
+          <span class="tooltiptext">
+            Esse número é a quantidade de caracteres da mensagem. Para a booyah
+            o máximo é 140, porém aqui ele fica travado no 134, isso levando em
+            consideração que você quer mandar uma mensagem de voz.</span
+          >
+        </div>
+      </div>
+
+      <script src="main.js"></script>
+    </div>
+  </body>
+</html>
