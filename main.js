@@ -1,5 +1,6 @@
 let lastRequest = {};
 const voices = [
+  "Vitoria",
   "Filiz",
   "Astrid",
   "Tatyana",
@@ -7,7 +8,6 @@ const voices = [
   "Carmen",
   "Ines",
   "Cristiano",
-  "Vitoria",
   "Ricardo",
   "Maja",
   "Jan",
