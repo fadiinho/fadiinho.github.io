@@ -263,7 +263,7 @@ document.getElementById("button").addEventListener("click", async () => {
   const text = document.getElementById("text").value;
   const voice = document.getElementById("voices").value;
 
-  if (lastRequest.text === text && lastRequest.voice === voice) {
+  if (lastRequest.message === text && lastRequest.voice === voice) {
     let audio = document.getElementById("audio");
     audio.play();
     return;
